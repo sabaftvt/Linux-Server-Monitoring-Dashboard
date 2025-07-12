@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitoring Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            min-width: 200px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .btn-charts {
+            background-color: #2196F3;
+        }
+        .btn-charts:hover {
+            background-color: #0b7dda;
+        }
+        .btn-system {
+            background-color: #ff9800;
+        }
+        .btn-system:hover {
+            background-color: #e68a00;
+        }
+        .btn-servers {
+            background-color: #9c27b0;
+        }
+        .btn-servers:hover {
+            background-color: #7b1fa2;
+        }
+        .btn-add {
+            background-color: #f44336;
+        }
+        .btn-add:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>System Monitoring Dashboard</h1>
+        <div class="button-container">
+            <a href="../charts/server_monitor.php" class="btn btn-charts">Charts</a>
+            <a href="../system_stat/index.php" class="btn btn-system">System Stat</a>
+            <a href="../servers/index.php" class="btn btn-servers">View Servers</a>
+            <a href="../add_form/index.html" class="btn btn-add">Add</a>
+        </div>
+    </div>
+</body>
+</html>

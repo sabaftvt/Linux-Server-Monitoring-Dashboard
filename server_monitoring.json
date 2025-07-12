@@ -1,0 +1,26 @@
+[
+    {
+        "host_ip": "192.168.1.111",
+        "hostname": "user1",
+        "username": "user1",
+        "password": "U1pass",
+        "cpu_usage": "25%",
+        "memory_usage": "52%",
+        "disk_usage": "12%",
+        "disk_used": "189M",
+        "disk_total": "1.8G",
+        "timestamp": "2025-07-09 17:39:25"
+    },
+    {
+        "host_ip": "192.168.1.112",
+        "hostname": "user2",
+        "username": "user2",
+        "password": "U2pass",
+        "cpu_usage": "19%",
+        "memory_usage": "53%",
+        "disk_usage": "12%",
+        "disk_used": "192M",
+        "disk_total": "1.8G",
+        "timestamp": "2025-07-09 17:39:27"
+    }
+]

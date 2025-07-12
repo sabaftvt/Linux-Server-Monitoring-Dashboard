@@ -1,0 +1,164 @@
+/* Reset و فونت‌ها */
+@import url('https://fonts.googleapis.com/css2?family=Sahel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sahel', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+.header {
+    background-color: #ff9800;
+    color: white;
+    padding: 35px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size:150%;
+    position: relative;
+    max-width: 76%;
+}  
+.header-txt{
+    font-weight: bold;
+}
+        
+.back-btn-container {
+    text-align: left; /* چپ‌چین کردن دکمه */
+    margin: 2px auto;
+    max-width: 76%; /* هماهنگ با عرض containerهای دیگر */
+    padding: 0 0; /* padding برای فاصله از لبه */
+}
+
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+.container {
+    max-width: 78%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.servers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.server-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.server-card:hover {
+    transform: translateY(-5px);
+}
+
+.server-card h2 {
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.ip {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.metric {
+    margin-bottom: 15px;
+}
+
+.metric label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s ease, background-color 1s ease;
+    float: left; /* اضافه کردن این خط */
+}
+
+.percentage {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.chart-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) {
+    .charts-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* اضافه کردن استایل برای زمان بروزرسانی */
+.last-update {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.update-time {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
